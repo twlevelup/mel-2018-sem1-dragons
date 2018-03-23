@@ -23,7 +23,6 @@ You can view this app at [https://twlevelup.github.io/mel-2018-sem1-dragons/](ht
     * `./go pre-commit` (OS X)
     * `npm -s run test` (Windows)
     * `docker-compose -f docker-compose.test.yml up` (Docker)
-
 5. Fix any errors
 6. Repeat steps 2-5 until all tests have passed and all conflicts have been resolved
 7. Run ```git push```
