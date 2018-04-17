@@ -4,6 +4,8 @@ const TeamPage = require('./pages/teamPage');
 const FourOhFour = require('./pages/404Page');
 const DemoPage = require('./pages/demoPage');
 const HelpPage = require('./pages/helpPage');
+const avatarPage = require('./pages/avatarPage');
+
 
 module.exports = {
   '/': HomePage,
@@ -11,5 +13,6 @@ module.exports = {
   'team': TeamPage,
   '404': FourOhFour,
   'demo': DemoPage,
-  'help': HelpPage
+  'help': HelpPage,
+  'avatar': avatarPage
 };
