@@ -3,11 +3,13 @@ const ContactsPage = require('./pages/contactsPage');
 const TeamPage = require('./pages/teamPage');
 const FourOhFour = require('./pages/404Page');
 const DemoPage = require('./pages/demoPage');
+const HelpPage = require('./pages/helpPage');
 
 module.exports = {
   '/': HomePage,
   'contacts': ContactsPage,
   'team': TeamPage,
   '404': FourOhFour,
-  'demo': DemoPage
+  'demo': DemoPage,
+  'help': HelpPage
 };

@@ -57,12 +57,16 @@ describe('HomePage', () => {
   });
 
   describe('#topButtonEvent', () => {
-    it('scrolls page up', () => {
-      const page = new HomePage({ watchFace });
+    it('should take the user to the help page', () => {
+      const props = {
+        navigate: () => { },
+      };
+
+      const page = new HomePage(props);
+      spyOn(page, 'navigate');
 
       page.topButtonEvent();
-
-      expect(watchFace.scrollTop).toEqual(-40);
+      expect(page.navigate).toHaveBeenCalledWith('help');
     });
   });
 });
