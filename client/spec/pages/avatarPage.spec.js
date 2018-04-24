@@ -1,5 +1,4 @@
   const avatarPage = require('../../src/js/pages/avatarPage');
-  const hero = require('../../Resources/superheros-home.png')
 
   describe('The avatar Page', () => {
     let watchFace;
