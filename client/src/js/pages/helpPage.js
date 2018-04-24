@@ -1,4 +1,5 @@
 const BasePage = require('watch-framework').BasePage;
+// const logo = require('../../images/logo.png')
 
 class HelpPage extends BasePage {
   template() {
