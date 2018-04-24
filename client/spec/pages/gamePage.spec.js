@@ -8,9 +8,25 @@ describe('The Game Page', () => {
     });
   
     describe('#template', () => {
-      it('should contain the correct text', () => {
+      it('should contain main div', () => {
         const page = new GamePage();
-        expect(page.template()).toContain('This is game page.');
+        expect(page.template()).toContain('div id="main"');
+      });
+      it('should contain top-container div', () => {
+        const page = new GamePage();
+        expect(page.template()).toContain('div id="top-container"');
+      });
+      it('should contain random-chosen div', () => {
+        const page = new GamePage();
+        expect(page.template()).toContain('div id="random-chosen"');
+      });
+      it('should contain central-container div', () => {
+        const page = new GamePage();
+        expect(page.template()).toContain('div id="central-container"');
+      });
+      it('should contain central-area div', () => {
+        const page = new GamePage();
+        expect(page.template()).toContain('div id="central-area"');
       });
     });
 });
