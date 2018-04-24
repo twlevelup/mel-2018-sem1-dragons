@@ -16,7 +16,7 @@ describe('HomePage', () => {
 
 
   describe('#leftButtonEvent', () => {
-    it('should take the user to the demo page', () => {
+    it('should take the user to the Avatar Page', () => {
       const props = {
         navigate: () => { },
       };
@@ -25,14 +25,14 @@ describe('HomePage', () => {
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('demo');
+      expect(page.navigate).toHaveBeenCalledWith('avatarPage');
     });
   });
 
 
 
   describe('#rightButtonEvent', () => {
-    it('goes to contacts page', () => {
+    it('goes to Avatar page', () => {
       const props = {
         navigate: () => { },
       };
@@ -40,7 +40,7 @@ describe('HomePage', () => {
       spyOn(page, 'navigate');
 
       page.rightButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('contacts');
+      expect(page.navigate).toHaveBeenCalledWith('avatarPage');
     });
   });
 
