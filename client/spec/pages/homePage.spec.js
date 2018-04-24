@@ -25,7 +25,7 @@ describe('HomePage', () => {
       spyOn(page, 'navigate');
 
       page.leftButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('avatarPage');
+      expect(page.navigate).toHaveBeenCalledWith('avatar');
     });
   });
 
@@ -40,7 +40,7 @@ describe('HomePage', () => {
       spyOn(page, 'navigate');
 
       page.rightButtonEvent();
-      expect(page.navigate).toHaveBeenCalledWith('avatarPage');
+      expect(page.navigate).toHaveBeenCalledWith('avatar');
     });
   });
 
