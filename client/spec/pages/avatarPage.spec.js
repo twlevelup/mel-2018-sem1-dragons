@@ -11,6 +11,6 @@
     describe('#template', () => {
     it('should contain the correct text', () => {
       const page = new avatarPage();
-      expect(page.template()).toContain('Avatar Page');
+      expect(page.template()).toContain('Avatar');
     });
   });
