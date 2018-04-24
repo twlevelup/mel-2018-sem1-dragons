@@ -6,6 +6,7 @@ const DemoPage = require('./pages/demoPage');
 const HelpPage = require('./pages/helpPage');
 const avatarPage = require('./pages/avatarPage');
 
+const GamePage = require('./pages/gamePage');
 
 module.exports = {
   '/': HomePage,
@@ -14,5 +15,6 @@ module.exports = {
   '404': FourOhFour,
   'demo': DemoPage,
   'help': HelpPage,
-  'avatar': avatarPage
+  'avatar': avatarPage,
+  'game': GamePage
 };

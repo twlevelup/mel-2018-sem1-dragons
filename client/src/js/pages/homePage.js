@@ -15,7 +15,7 @@ class HomePage extends BasePage {
     };
     return compiledTemplate(context);
   }
-
+  
   rightButtonEvent() {
     this.navigate('avatar');
   }
