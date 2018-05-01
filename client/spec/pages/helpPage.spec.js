@@ -10,7 +10,7 @@ describe('The Help Page', () => {
   describe('#template', () => {
     it('should contain the correct text', () => {
       const page = new HelpPage();
-      expect(page.template()).toContain('This is a demo.');
+      expect(page.template()).toContain('<h1 align="center">Help</h1>');
     });
   });
 });
