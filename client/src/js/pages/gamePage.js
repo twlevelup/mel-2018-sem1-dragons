@@ -9,5 +9,6 @@ class GamePage extends BasePage {
 }
 
 var shapesList = ["square", "cicle", "triangle"];
+var randomChosen = Math.floor(Math.random()*shapesList.length);
 
 module.exports = GamePage;

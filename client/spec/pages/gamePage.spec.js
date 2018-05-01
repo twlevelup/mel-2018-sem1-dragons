@@ -11,6 +11,11 @@ describe('The Game Page', () => {
         const page = new GamePage();
         var shapesList = ["square", "cicle", "triangle"];      
       });
+
+      it('choose random shapes from shapesList', () => {
+        const page = new GamePage();
+        var randomChosen = "square" || "cicle" || "triangle";     
+      });
    
     describe('#template', () => {
       it('should contain main div', () => {
