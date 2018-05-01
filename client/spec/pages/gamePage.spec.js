@@ -6,7 +6,12 @@ describe('The Game Page', () => {
       document.body.innerHTML = `<div id='watch-face' style='height: 100px; width: 100px;'></div>`;
       watchFace = document.getElementById('watch-face');
     });
-  
+
+      it('contains shapes in an array', () => {
+        const page = new GamePage();
+        var shapesList = ["square", "cicle", "triangle"];      
+      });
+   
     describe('#template', () => {
       it('should contain main div', () => {
         const page = new GamePage();
@@ -28,5 +33,6 @@ describe('The Game Page', () => {
         const page = new GamePage();
         expect(page.template()).toContain('div id="central-area"');
       });
+
     });
 });
