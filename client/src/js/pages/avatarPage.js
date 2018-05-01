@@ -5,6 +5,24 @@ class avatarPage extends BasePage {
   template() {
     return compiledTemplate();
   }
+
+
+topButtonEvent() {
+  this.navigate('/');
 }
+
+bottomButtonEvent() {
+  this.navigate('/');
+}
+
+rightButtonEvent() {
+  this.navigate('/');
+}
+
+leftButtonEvent() {
+  this.navigate('/');
+}
+}
+
 
 module.exports = avatarPage;
