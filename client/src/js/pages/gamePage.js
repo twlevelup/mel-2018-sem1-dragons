@@ -3,12 +3,29 @@ const compiledTemplate = require('../../templates/gamePage.hbs')
 
 
 class GamePage extends BasePage {
-  template() {
-      return compiledTemplate();
+  
+  constructor(props = {}) {
+    super(props);
+    this.colors = props.colors || ['red', 'blue', 'yellow'];
+    this.shapes = props.shapes || ['triangle', 'cicle', 'rectangle'];
+    this.patterns = props.patterns || ['dots', 'waves'];
+    
   }
-}
+  
+  selectAShape(shapes){
+      const randomChosenIndex = Math.floor(Math.random()*this.shapes.length);    
+      return this.shapes[randomChosenIndex]
+    };   
 
-var shapesList = ["square", "cicle", "triangle"];
-var randomChosen = Math.floor(Math.random()*shapesList.length);
+  template() {
+    var context = {
+      colors: this.colors,
+      shapes: this.shapes,
+      patterns: this.patterns,
+      chosenShape : this.selectAShape(this.shapes),
+    };
+    return compiledTemplate(context)
+  };
+};
 
 module.exports = GamePage;

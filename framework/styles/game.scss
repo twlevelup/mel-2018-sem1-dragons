@@ -1,0 +1,48 @@
+#game-page {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color:black;
+}
+
+#header {
+    width: 100%;
+    margin: 0 auto; 
+    background-color: rgb(220, 224, 207);
+    text-align:center;
+}
+#home-icon {
+    text-align:center;
+}
+.big-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 205px;
+    width: 240px;
+}
+#random-chosen {
+    border: 1px solid black;
+    border-radius: 0.3;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+#central-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;        
+}
+
+#central-area {
+    border: 1px solid black;
+    //border-style: hidden;
+    width: 200px;
+    height: 130px;
+}
+#bottom-patterns-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
