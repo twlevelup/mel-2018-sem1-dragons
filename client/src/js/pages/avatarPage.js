@@ -1,27 +1,31 @@
 const BasePage = require('watch-framework').BasePage;
 const compiledTemplate = require('../../templates/avatarPage.hbs')
+const raccoon = '../../images/raccoon.png';
 
 class avatarPage extends BasePage {
   template() {
-    return compiledTemplate();
+    const context = {
+      avatar: raccoon,
+    };
+    return compiledTemplate(context);
   }
 
 
-topButtonEvent() {
-  this.navigate('/');
-}
+  topButtonEvent() {
+    this.navigate('/');
+  }
 
-bottomButtonEvent() {
-  this.navigate('game');
-}
+  bottomButtonEvent() {
+    this.navigate('game');
+  }
 
-rightButtonEvent() {
-  this.navigate('game');
-}
+  rightButtonEvent() {
+    this.navigate('game');
+  }
 
-leftButtonEvent() {
-  this.navigate('game');
-}
+  leftButtonEvent() {
+    this.navigate('game');
+  }
 }
 
 
