@@ -12,15 +12,15 @@ topButtonEvent() {
 }
 
 bottomButtonEvent() {
-  this.navigate('/');
+  this.navigate('game');
 }
 
 rightButtonEvent() {
-  this.navigate('/');
+  this.navigate('game');
 }
 
 leftButtonEvent() {
-  this.navigate('/');
+  this.navigate('game');
 }
 }
 
