@@ -40,5 +40,4 @@ describe('The Game Page', () => {
     const page = new GamePage();
     expect(page.template()).toContain('div id="central-area"');
   });
-
 });
