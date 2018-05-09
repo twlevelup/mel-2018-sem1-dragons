@@ -9,7 +9,7 @@ describe('The Game Page', () => {
 
   it('default has 3 shapes in GamePage', () => {
     const page = new GamePage();
-    expect(page.shapes.length).toEqual(3);
+    expect(page.shapes.length).toEqual(8);
   });
 
   it('random chosen shape must be a item of the shapes list',()=>{

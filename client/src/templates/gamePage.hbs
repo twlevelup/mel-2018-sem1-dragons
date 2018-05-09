@@ -1,29 +1,27 @@
 <div id="game-page">
-  <div id="header">
-    <span class="icon" id="home-icon">
-      <img src="/Resources/homeButton.png" alt="Stickman" width="28" height="25">
-    </span>
-  </div>
-  <div class="big-container">
-    <div id="top-container">
-          <div id="random-chosen">{{chosenShape}}</div>
+    <div id="header">
+        <span class="icon" id="home-icon">
+            <img src="/Resources/homeButton.png" alt="Stickman" width="28" height="25">
+        </span>
     </div>
-    <div id="central-container">
-      <div id="left-colors-box">
-       
-      </div>
-      <div id="central-area">bluh</div>
-      <div id="right-shapes-box">
-        {{#each shapes}}
-          <div class="shape" onclick="displaySelectedShapes()">{{this}}</div>
-        {{/each}}
-      </div>
-    </div>      
-    <div id="bottom-container">
-      <div id="bottom-patterns-box">
-             
-      </div>
-    </div>
-  </div>
-</div>
+    <div class="big-container">
+        <div id="top-container">
+            <div id="random-wrap">
+            <div id="random-chosen">{{chosenShape}}</div>
+            </div>
+        </div>
+        <div id="central-container">
+            <div id="left-colors-box"></div>
+            <div id="central-area">bluh</div>
+            <div id="right-shapes-box">
+                {{#each shapes}}
+                    <div class="shape">{{this}}</div>
+                {{/each}}
+            </div>
 
+            <div id="bottom-container">
+                <div id="bottom-patterns-box"></div>
+            </div>
+        </div>
+    </div>
+</div>
