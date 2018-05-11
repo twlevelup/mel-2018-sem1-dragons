@@ -7,16 +7,25 @@ describe('The Game Page', () => {
     shapeswatchFace = document.getElementById('watch-face');
   });
 
-  it('default has 3 shapes in GamePage', () => {
+  it('default has 7 shapes in the list of shapes array', () => {
     const page = new GamePage();
-    expect(page.shapes.length).toEqual(8);
+    expect(page.shapes.length).toEqual(7);
   });
 
   it('random chosen shape must be a item of the shapes list',()=>{
     const page = new GamePage();
-    const selectedShape = page.selectAShape(page.shapes);
-    const isInShape = page.shapes.includes(selectedShape);
+    const isInShape = page.shapes.includes(page.expectedShape);
     expect(isInShape).toEqual(true);
+  });
+
+  it('selected shape must be a item of the shapes list',()=>{
+    const page = new GamePage();
+    page.onload = function testSelectedInDiv(){
+      page.template();
+      page.rightButtonEvent();
+      const selectShapeInShape = page.shapes.includes(page.selectedShape);
+      expect(selectShapeInShape).toEqual(true);
+    }   
   });
 
   it('should contain main div', () => {
