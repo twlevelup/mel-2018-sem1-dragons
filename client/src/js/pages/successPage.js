@@ -1,13 +1,16 @@
 require('../../styles/pages/home.scss');
 
 const BasePage = require('watch-framework').BasePage;
-const logo = require('../../images/logo.png');
+const croc = '/client/src/images/croc-success.jpeg';
 const compiledTemplate = require("../../templates/successPage.hbs");
 
 class SuccessPage extends BasePage {
   template() {
-    return `<div align="center">Done Really well!!! Are you ready for level 2?.</div>`;
+    const context = {
+      avatar: croc,
     };
+    return compiledTemplate(context);
+  }
    
   
 
