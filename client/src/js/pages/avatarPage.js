@@ -1,12 +1,12 @@
 const BasePage = require('watch-framework').BasePage;
 const compiledTemplate = require('../../templates/avatarPage.hbs')
-const croc = '/Resources/croc.png';
+//const croc = 
 
 class avatarPage extends BasePage {
-  // constructor(props = {}) {
-  //   super(props);
-  //   this.avatar = "";
-  // }
+  constructor(props = {}) {
+    super(props);
+    this.croc = "/Resources/croc.png";;
+  }
     // createAvatarFor1(avatar) {
     //   const src = document.getElementById("avatar").getAttribute("src");
     //   this.avatar = "/client/src/images/croc.png'";
@@ -15,7 +15,7 @@ class avatarPage extends BasePage {
 
     template() {
     const context = {
-      avatar: croc,
+      croc: this.croc,
     };
     return compiledTemplate(context);
   }
