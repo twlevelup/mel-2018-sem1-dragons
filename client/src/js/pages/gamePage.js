@@ -57,6 +57,11 @@ class GamePage extends BasePage {
   leftButtonEvent() {
      this.navigate('/');   
   }
+
+  bottomButtonEvent(){
+    (this.expectedShape==this.selectedShape)?this.navigate('success'):console.log("Its not");
+  }
+
 };
 
 module.exports = GamePage;
