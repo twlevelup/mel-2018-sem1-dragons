@@ -45,14 +45,15 @@ describe('HomePage', () => {
   });
 
   describe('#bottomButtonEvent', () => {
-    it('scrolls page down', () => {
-
-      const page = new HomePage({ watchFace });
+    it('goes to Avatar page', () => {
+      const props = {
+        navigate: () => { },
+      };
+      const page = new HomePage(props);
+      spyOn(page, 'navigate');
 
       page.bottomButtonEvent();
-
-      expect(watchFace.scrollTop).toEqual(40);
-
+      expect(page.navigate).toHaveBeenCalledWith('avatar');
     });
   });
 
