@@ -1,6 +1,6 @@
 const BasePage = require('watch-framework').BasePage;
 const compiledTemplate = require('../../templates/avatarPage.hbs')
-const croc = '/client/src/images/croc.png';
+const croc = '/Resources/croc.png';
 
 class avatarPage extends BasePage {
   // constructor(props = {}) {
