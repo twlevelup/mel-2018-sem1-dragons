@@ -38,14 +38,16 @@ class GamePage extends BasePage {
       this.currentFocus = 0;
     }
     this.selectedShape = this.shapes[this.currentFocus];
-    let centralTopContainer = document.getElementById("central-top-container");
+    console.log(this.selectedShape);
+    const centralTopContainer = document.getElementById("central-top-container");
     centralTopContainer.innerHTML = this.selectedShape;
-    
-    // ------highlight toggled shape--------
-    const rightShapes = document.getElementsByClassName("shape"); 
+    console.log(centralTopContainer);
+    // ---------highlight toggled shape---------------
+    const rightShapes = document.getElementsByClassName("shape");
     const styleOfCurrentShapeBorder = rightShapes[this.currentFocus].style;
     for (var i = 0; i < lengthOfShapes; i++) {
       rightShapes[i].style.border = "none";
+      rightShapes[i].style.boxShadow = "none";
     } 
     styleOfCurrentShapeBorder["border"] = "2px solid #50cbee";
     styleOfCurrentShapeBorder["boxShadow"] = "0 0 5px #50cbee";
